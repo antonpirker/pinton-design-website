@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pinton: "#1F2933",
+              pintonlight: "#858F99",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="flex flex-col p-1 m-2 bg-pinton">
+      <div class="bg-white">
+        <!-- Header -->
+        <div class="flex flex-col p-5">
+          <a href="index.html"
+            ><div class="text-6xl text-pinton flex-grow text-center">
+              Pinton
+            </div></a
+          >
+          <div class="text-sm text-pintonlight flex-grow text-center">
+            Creating stuff for the fun of it.
+          </div>
+        </div>
+
+        <!-- Detail -->
+        <div class="flex flex-col p-5">
+          <div
+            class="bg-slate-200 aspect-video bg-cover"
+            style="background-image: url(https://loremflickr.com/800/600)"
+          ></div>
+
+          <div class="-mt-8 mx-1 text-base md:text-lg">
+            <span class="text-pinton bg-white px-2 py-1">Something Random</span>
+          </div>
+
+          <div class="my-2 text-base text-pintonlight mb-10">
+            <p>
+              This was a nice project, where the idea came from so and so and it
+              was done over the time of two months.
+            </p>
+          </div>
+
+          <div
+            class="bg-slate-200 aspect-video bg-cover mb-10"
+            style="background-image: url(https://loremflickr.com/800/600)"
+          ></div>
+          <div
+            class="bg-slate-200 aspect-video bg-cover mb-10"
+            style="background-image: url(https://loremflickr.com/800/600)"
+          ></div>
+          <div
+            class="bg-slate-200 aspect-video bg-cover mb-10"
+            style="background-image: url(https://loremflickr.com/800/600)"
+          ></div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex flex-row p-5 bg-white">
+          <div class="flex-1 text-sm text-pinton text-left">
+            <a href="detail.html"><span class="text-base">↢ </span>Previous</a>
+          </div>
+          <div class="flex-1 text-sm text-pinton text-right">
+            <a href="detail.html">Next<span class="text-base"> ↣</span></a>
+          </div>
+        </div>
+        <div class="flex flex-col p-5 bg-white">
+          <div class="text-sm text-pintonlight flex-grow text-center">
+            You can contact me at
+            <a href="mailto:pinton.design@protonmail.com">pinton.design@protonmail.com</a>. I read
+            those emails on Sundays. Maybe.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
