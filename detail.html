@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Montserrat+Alternates:wght@900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -16,18 +19,23 @@
         },
       };
     </script>
+    <style>
+      .headline1 {
+        font-family: 'Montserrat Alternates', sans-serif;
+      }
+      .headline2 {
+        font-family: 'Cutive Mono', monospace;
+      }
+    </style>
   </head>
   <body>
     <div class="flex flex-col p-1 m-2 bg-pinton">
       <div class="bg-white">
         <!-- Header -->
         <div class="flex flex-col p-5">
-          <a href="index.html"
-            ><div class="text-6xl text-pinton flex-grow text-center">
-              Pinton
-            </div></a
-          >
-          <div class="text-sm text-pintonlight flex-grow text-center">
+          <div class="headline1 text-6xl text-pinton flex-grow text-center">Pinton</div>
+          <div class="headline2 text-2xl text-pinton flex-grow text-center">studio</div>
+          <div class="text-sm text-pintonlight flex-grow text-center mt-8">
             Creating stuff for the fun of it.
           </div>
         </div>
