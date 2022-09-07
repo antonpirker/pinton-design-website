@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Montserrat+Alternates:wght@900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pinton: "#1F2933",
+              pintonlight: "#858F99",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .headline1 {
+        font-family: 'Montserrat Alternates', sans-serif;
+      }
+      .headline2 {
+        font-family: 'Cutive Mono', monospace;
+      }
+      .description p {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex flex-col p-1 m-2 bg-pinton">
+      <div class="bg-white">
+        <!-- Header -->
+        <div class="flex flex-col p-5">
+          <div class="headline1 text-6xl text-pinton flex-grow text-center"><a href="index.html">Pinton</a></div>
+          <div class="headline2 text-2xl text-pinton flex-grow text-center"><a href="index.html">studio</a></div>
+          <div class="text-sm text-pintonlight flex-grow text-center mt-8">
+            Creating stuff for the fun of it.
+          </div>
+        </div>
+
+        <!-- Detail -->
+        <div class="flex flex-col p-5">
+          <div
+            class="bg-slate-200 aspect-video bg-cover"
+            style="background-image: url(assets/bike/bike-thumbnail.jpg)"
+          ></div>
+
+          <div class="-mt-8 mx-1 text-base md:text-lg">
+            <span class="text-pinton bg-white px-2 py-1">Bike</span>
+          </div>
+
+          <div class="my-2 text-base text-pintonlight mb-10 description">
+            <p>
+              I got an old road racing bike, and transformed it in a nice road commuter bike.
+            </p>
+            <p>
+              First I dismantled everything and cleaned all the parts. 
+              After sanding the frame a base layer was applied followed by three layers of paint with the name "Strong Ocean".
+              The paint job was finalized with several layers of clear coat.
+              Some parts where switched for orange ones to give a nice look.
+              The handlebars where changed to touring handlebars and a modern stem was installed. 
+              This gives the rider a more upright position and makes the bike more comortable to ride.
+            
+              The tires where switched for puncture resistant tires in the widest size the frame could fit. 
+              This improves riding comfort and keeps maintenance low.
+            </p>
+          </div>
+
+          <div
+            class="bg-slate-200 aspect-video bg-cover mb-10"
+            style="background-image: url(assets/bike/bike-before.jpg)"
+          ></div>
+          <div
+            class="bg-slate-200 aspect-video bg-cover mb-10"
+            style="background-image: url(assets/bike/frame-before.jpg)"
+          ></div>
+          <div
+            class="bg-slate-200 aspect-video bg-cover mb-10"
+            style="background-image: url(assets/bike/bike-parts.jpg)"
+          ></div>
+          <div
+            class="bg-slate-200 aspect-video bg-cover mb-10"
+            style="background-image: url(assets/bike/paintjob.jpg)"
+          ></div>
+          <div
+            class="bg-slate-200 aspect-video bg-cover mb-10"
+            style="background-image: url(assets/bike/frame-after.jpg)"
+          ></div>
+          <div
+            class="bg-slate-200 aspect-video bg-cover mb-10"
+            style="background-image: url(assets/bike/breaks.jpg)"
+          ></div>
+          <div
+            class="bg-slate-200 aspect-video bg-cover mb-10"
+            style="background-image: url(assets/bike/pedals.jpg)"
+          ></div>
+          <div
+            class="bg-slate-200 aspect-video bg-cover mb-10"
+            style="background-image: url(assets/bike/toptube.jpg)"
+          ></div>
+          <div
+            class="bg-slate-200 aspect-video bg-cover mb-10"
+            style="background-image: url(assets/bike/handlebars-before.jpg)"
+          ></div>
+          <div
+            class="bg-slate-200 aspect-video bg-cover mb-10"
+            style="background-image: url(assets/bike/handlebars-after.jpg)"
+          ></div>       
+          <div
+            class="bg-slate-200 aspect-video bg-cover mb-10"
+            style="background-image: url(assets/bike/bike-thumbnail.jpg)"
+          ></div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex flex-row p-5 bg-white">
+        
+          <div class="flex-1 text-sm text-pinton text-right">
+            Next<span class="text-base"> ↣</span>
+          </div>
+        </div>
+        <div class="flex flex-col p-5 bg-white">
+          <div class="text-sm text-pintonlight flex-grow text-center">
+            You can contact me at
+            <a href="mailto:pinton.design@protonmail.com">pinton.design@protonmail.com</a>. I read
+            those emails on Sundays. Maybe.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
